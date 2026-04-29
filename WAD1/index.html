@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marks Analysis Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>EduScore</h2>
+    <ul>
+        <li class="active">Dashboard</li>
+        <li>Subjects</li>
+        <li>Students</li>
+        <li>Reports</li>
+        <li>Settings</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+        <h1>Marks Analysis Overview</h1>
+        <div class="date">Semester 1 - 2026</div>
+        
+    </div>
+
+    
+    <div class="cards">
+        <div class="card positive">
+            <h3>Class Average</h3>
+            <p>78.5%</p>
+            <span>+4% vs last semester</span>
+        </div>
+        <div class="card positive">
+            <h3>Pass Rate</h3>
+            <p>92%</p>
+            <span>+2.5% vs last semester</span>
+        </div>
+        <div class="card neutral">
+            <h3>Highest Score</h3>
+            <p>98%</p>
+            <span>Mathematics</span>
+        </div>
+        <div class="card">
+            <h3>Total Students</h3>
+            <p>120</p>
+            <span>Active</span>
+        </div>
+    </div>
+
+    
+    <div class="charts">
+        <div class="chart-box large">
+            <h3>Performance Trend (Over Tests)</h3>
+            <canvas id="marksChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Subject Averages</h3>
+            <canvas id="subjectChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Grade Distribution</h3>
+            <canvas id="gradeChart"></canvas>
+        </div>
+    </div>
+
+    <div class="progress-section">
+        <h3>Overall Syllabus Completion</h3>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width:85%">85%</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
